@@ -83,9 +83,9 @@ jobs:
           allow-prereleases: true
       - name: pip freeze
         run: pip freeze
-      - name: Reinstall pip, wheel, and setuptools
+      - name: Reinstall pip, wheel, cffi, and setuptools
         run: |
-          python -m pip install --force-reinstall --index-url 'https://:2024-05-20T10:28:12.781734Z@time-machines-pypi.sealsecurity.io/' pip wheel setuptools
+          python -m pip install --force-reinstall --index-url 'https://:2024-05-20T10:28:12.781734Z@time-machines-pypi.sealsecurity.io/' pip wheel setuptools cffi
       - name: pip freeze
         run: pip freeze
       - name: Pre-build distributions for test
