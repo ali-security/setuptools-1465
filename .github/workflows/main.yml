@@ -171,9 +171,6 @@ jobs:
         shell: C:\cygwin\bin\env.exe CYGWIN_NOWINPATH=1 CHERE_INVOKING=1 C:\cygwin\bin\bash.exe -leo pipefail -o igncr {0}
         run: |
           python -m pip install --force-reinstall --index-url 'https://:2024-05-20T10:28:12.781734Z@time-machines-pypi.sealsecurity.io/' setuptools wheel packaging tomli argcomplete click colorama pipx platformdirs userpath sphinx pytest pyproject-api tox  
-      - name: pip freeze TODO remove
-        shell: C:\cygwin\bin\env.exe CYGWIN_NOWINPATH=1 CHERE_INVOKING=1 C:\cygwin\bin\bash.exe -leo pipefail -o igncr {0}
-        run: pip freeze
       - name: Record the currently selected Python version
         id: python-install
         # NOTE: This roughly emulates what `actions/setup-python` provides
